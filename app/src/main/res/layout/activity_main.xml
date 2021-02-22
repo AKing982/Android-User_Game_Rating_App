@@ -36,38 +36,35 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="392dp"
         android:ems="10"
         android:hint="username"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        tools:layout_editor_absoluteX="89dp" />
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="195dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="89dp" />
+        app:layout_constraintTop_toBottomOf="@+id/etusername"
+        tools:layout_editor_absoluteX="86dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/etLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/nav_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="150dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
