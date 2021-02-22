@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         Username = (EditText)findViewById(R.id.etusername);
         Password = (EditText)findViewById(R.id.etPassword);
         Login = (Button)findViewById(R.id.etLogin);
+    }
+
+    private void validate(String userName, String userPassword)
+    {
+        if((userName == "Admin") && (userPassword == "password"))
+        {
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+
+        }
     }
 
 }
