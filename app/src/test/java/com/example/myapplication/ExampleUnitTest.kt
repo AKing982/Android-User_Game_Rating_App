@@ -1,4 +1,4 @@
-package com.example.geekbox
+package com.example.myapplication
 
 import org.junit.Test
 
