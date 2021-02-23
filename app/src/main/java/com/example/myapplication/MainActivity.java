@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         if((userName == "Admin") && (userPassword == "password"))
         {
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            startActivity(intent);
 
         }
     }
