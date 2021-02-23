@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText Username;
     private EditText Password;
     private Button Login;
+    private TextView register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         Username = (EditText)findViewById(R.id.etusername);
         Password = (EditText)findViewById(R.id.etPassword);
         Login = (Button)findViewById(R.id.etLogin);
+        register = (TextView)findViewById(R.id.etregister);
+        
     }
 
     private void validate(String userName, String userPassword)
