@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -39,15 +40,17 @@ public class MainActivity extends AppCompatActivity {
         Password = (EditText)findViewById(R.id.etPassword);
         Login = (Button)findViewById(R.id.etLogin);
         register = (TextView)findViewById(R.id.etregister);
-        
+        register.setOnClickListener(this);
     }
 
-    private void validate(String userName, String userPassword)
+
+    public void onClick(View v)
     {
-        if((userName == "Admin") && (userPassword == "password"))
+        switch(v.getId())
         {
-            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            startActivity(intent);
+            case R.id.etregister:
+                startActivity(new Intent(this, register.class));
+                break;
 
         }
     }
